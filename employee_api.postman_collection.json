@@ -1,0 +1,12 @@
+{
+  "info": {"name": "Employee Management API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "item": [
+    {"name": "1. GET all employees", "request": {"method": "GET", "url": "http://127.0.0.1:5000/employees"}},
+    {"name": "2. GET employee by ID", "request": {"method": "GET", "url": "http://127.0.0.1:5000/employees/401"}},
+    {"name": "3. POST add employee", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\n  \"id\": 407,\n  \"name\": \"Lakshmi\",\n  \"designation\": \"Tester\"\n}"}, "url": "http://127.0.0.1:5000/employees"}},
+    {"name": "4. PUT update employee", "request": {"method": "PUT", "header": [{"key": "Content-Type", "value": "application/json"}],
+      "body": {"mode": "raw", "raw": "{\n  \"name\": \"Arun Kumar\",\n  \"designation\": \"Senior Manager\"\n}"}, "url": "http://127.0.0.1:5000/employees/401"}},
+    {"name": "5. DELETE employee", "request": {"method": "DELETE", "url": "http://127.0.0.1:5000/employees/406"}}
+  ]
+}
